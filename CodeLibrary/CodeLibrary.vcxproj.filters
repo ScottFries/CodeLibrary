@@ -18,5 +18,8 @@
     <ClInclude Include="CommonTypes\Vector.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Conversions\UnderlyingType.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
