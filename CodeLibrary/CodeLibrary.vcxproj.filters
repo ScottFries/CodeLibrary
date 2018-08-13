@@ -21,5 +21,11 @@
     <ClInclude Include="Conversions\UnderlyingType.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="TMP\Const.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TMP\Conditions.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

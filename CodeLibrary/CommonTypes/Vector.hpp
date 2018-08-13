@@ -2,7 +2,7 @@
 
 #include <array>
 
-namespace balance
+namespace frw
 {
 template <typename T, size_t N>
 class Vector;
@@ -20,7 +20,6 @@ class BaseVector
 {
 public:
     constexpr BaseVector() = default;
-
     constexpr BaseVector(std::array<T, N> vals) : data_(vals) {}
 
     // TODO: Too greedy for common use; may offer as make_vector for higher order Vectors
@@ -91,7 +90,8 @@ public:
 
     constexpr void Normalize(T length) { *this *= 1 / length; }
 
-    // TODO: Change to Magnitude; have Length inline-call Magnitude
+    constexpr T Magnitude() const { return Length(); }
+
     constexpr T Length() const
     {
         return sqrt(LengthSquared());  // TODO: Can you determine T to pick which sqrt? Do you need to?
@@ -124,12 +124,12 @@ public:
     using BaseVector<T, N>::Dot;
     using BaseVector<T, N>::Project;
     using BaseVector<T, N>::Normalize;
+    using BaseVector<T, N>::Magnitude;
     using BaseVector<T, N>::Length;
     using BaseVector<T, N>::LengthSquared;
     using BaseVector<T, N>::Data;
 
     Vector() = default;
-
     Vector(BaseVector<T, N> v) : BaseVector<T, N>(v) {}
 };
 
@@ -149,16 +149,14 @@ public:
     using BaseVector<T, N>::Dot;
     using BaseVector<T, N>::Project;
     using BaseVector<T, N>::Normalize;
+    using BaseVector<T, N>::Magnitude;
     using BaseVector<T, N>::Length;
     using BaseVector<T, N>::LengthSquared;
     using BaseVector<T, N>::Data;
 
     Vector() = default;
-
     Vector(BaseVector<T, N> v) : BaseVector<T, N>(v) {}
-
     Vector(const T& x, const T& y) : BaseVector<T, N>({x, y}) {}
-
     Vector(T&& x, T&& y) : BaseVector<T, N>({x, y}) {}
 
     constexpr T& X() { return this->data_[0]; }
@@ -183,16 +181,14 @@ public:
     using BaseVector<T, N>::Dot;
     using BaseVector<T, N>::Project;
     using BaseVector<T, N>::Normalize;
+    using BaseVector<T, N>::Magnitude;
     using BaseVector<T, N>::Length;
     using BaseVector<T, N>::LengthSquared;
     using BaseVector<T, N>::Data;
 
     Vector() = default;
-
     Vector(BaseVector<T, N> v) : BaseVector<T, N>(v) {}
-
     Vector(const T& x, const T& y, const T& z) : BaseVector<T, N>({x, y, z}) {}
-
     Vector(T&& x, T&& y, T&& z) : BaseVector<T, N>({x, y, z}) {}
 
     constexpr T& X() { return this->data_[0]; }
@@ -226,20 +222,16 @@ public:
     using BaseVector<T, N>::Dot;
     using BaseVector<T, N>::Project;
     using BaseVector<T, N>::Normalize;
+    using BaseVector<T, N>::Magnitude;
     using BaseVector<T, N>::Length;
     using BaseVector<T, N>::LengthSquared;
     using BaseVector<T, N>::Data;
 
     Vector() = default;
-
     Vector(BaseVector<T, N> v) : BaseVector<T, N>(v) {}
-
     Vector(const T& x, const T& y, const T& z, const T& w) : BaseVector<T, N>({x, y, z, w}) {}
-
     Vector(T&& x, T&& y, T&& z, T&& w) : BaseVector<T, N>({x, y, z, w}) {}
-
     Vector(const BaseVector<T, 3>& v, const T& w) : BaseVector<T, N>({v.X(), v.Y(), v.Z(), w}) {}
-
     Vector(BaseVector<T, 3>&& v, T&& w) : BaseVector<T, N>({v.X(), v.Y(), v.Z(), w}) {}
 
     constexpr explicit operator Vector<T, 3>() const { return Vector<T, 3>(data_[0], this->data_[1], this->data_[2]); }
