@@ -115,6 +115,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Bitwise\Parity.hpp" />
     <ClInclude Include="CommonTypes\Vector.hpp" />
     <ClInclude Include="Conversions\UnderlyingType.hpp" />
     <ClInclude Include="TMP\Conditions.hpp" />

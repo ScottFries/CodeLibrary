@@ -27,5 +27,8 @@
     <ClInclude Include="TMP\Conditions.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Bitwise\Parity.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
