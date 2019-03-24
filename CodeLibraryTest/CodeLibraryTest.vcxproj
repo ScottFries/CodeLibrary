@@ -144,6 +144,7 @@
     <ClCompile Include="CommonTypes\VectorTest.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Conversions\UnderlyingTypeTest.cpp" />
+    <ClCompile Include="TMP\has_function_test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

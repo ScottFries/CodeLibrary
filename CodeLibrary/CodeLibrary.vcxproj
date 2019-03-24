@@ -120,6 +120,7 @@
     <ClInclude Include="Conversions\UnderlyingType.hpp" />
     <ClInclude Include="TMP\Conditions.hpp" />
     <ClInclude Include="TMP\Const.hpp" />
+    <ClInclude Include="TMP\has_function.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
