@@ -1,4 +1,4 @@
-#include "TMP/has_function.hpp"
+#include "TMP/Conditions/has_function.hpp"
 
 #include <string>
 
