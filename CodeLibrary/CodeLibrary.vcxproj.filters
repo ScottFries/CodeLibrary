@@ -53,5 +53,8 @@
     <ClInclude Include="TMP\Conditions\type_trait_conditions.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="String\demangle.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

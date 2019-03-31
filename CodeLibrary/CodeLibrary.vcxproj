@@ -120,6 +120,7 @@
     <ClInclude Include="Conversions\UnderlyingType.hpp" />
     <ClInclude Include="Rules\special_member_functions.hpp" />
     <ClInclude Include="Rules\standard_rules.hpp" />
+    <ClInclude Include="String\demangle.hpp" />
     <ClInclude Include="TMP\conditions.hpp" />
     <ClInclude Include="TMP\Conditions\conditions.hpp" />
     <ClInclude Include="TMP\Conditions\has_function.hpp" />
