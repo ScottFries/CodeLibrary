@@ -24,6 +24,9 @@
     <ClInclude Include="TMP\Const.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="STL\erase.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="Rules\special_member_functions.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
