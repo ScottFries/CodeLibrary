@@ -24,6 +24,12 @@
     <ClInclude Include="TMP\Const.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Rules\special_member_functions.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules\standard_rules.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Bitwise\Parity.hpp">
