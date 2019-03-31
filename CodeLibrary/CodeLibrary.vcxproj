@@ -127,7 +127,7 @@
     <ClInclude Include="TMP\Conditions\has_function.hpp" />
     <ClInclude Include="TMP\Conditions\is_instance_of.hpp" />
     <ClInclude Include="TMP\Conditions\type_trait_conditions.hpp" />
-    <ClInclude Include="TMP\Const.hpp" />
+    <ClInclude Include="TMP\const_conversions.hpp" />
     <ClInclude Include="TMP\has_function.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

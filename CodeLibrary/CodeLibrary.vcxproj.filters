@@ -21,7 +21,7 @@
     <ClInclude Include="Conversions\UnderlyingType.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="TMP\Const.hpp">
+    <ClInclude Include="TMP\const_conversions.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="STL\erase.hpp">

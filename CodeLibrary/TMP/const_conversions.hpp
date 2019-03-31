@@ -1,5 +1,7 @@
 #pragma once
 
+namespace frw
+{
 template <class T>
 struct const_reference
 {
@@ -17,3 +19,4 @@ struct add_const_to_value
 
 template <class T>
 using add_const_to_value_t = typename add_const_to_value<T>::type;
+}  // namespace frw
