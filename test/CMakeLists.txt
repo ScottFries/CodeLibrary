@@ -8,6 +8,22 @@ target_link_libraries(catch_main PUBLIC Catch2::Catch2)
 target_link_libraries(catch_main PRIVATE project_options)
 target_link_libraries(catch_main PUBLIC code_library)
 
+add_executable(insertion_sort_tests "algorithm/sorting/insertion_sort_tests.cpp")
+target_link_libraries(insertion_sort_tests PRIVATE project_options project_warnings catch_main)
+catch_discover_tests(
+    insertion_sort_tests
+    TEST_PREFIX
+    "insertion_sort."
+    REPORTER
+    xml
+    OUTPUT_DIR
+    .
+    OUTPUT_PREFIX
+    "insertion_sort."
+    OUTPUT_SUFFIX
+    .xml
+)
+
 add_executable(has_function_tests "conditions/has_function_tests.cpp")
 target_link_libraries(has_function_tests PRIVATE project_options project_warnings catch_main)
 catch_discover_tests(
