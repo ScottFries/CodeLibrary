@@ -24,6 +24,22 @@ catch_discover_tests(
     .xml
 )
 
+add_executable(standard_rules_tests "assertions/standard_rules_tests.cpp")
+target_link_libraries(standard_rules_tests PRIVATE project_options project_warnings catch_main)
+catch_discover_tests(
+    standard_rules_tests
+    TEST_PREFIX
+    "standard_rules."
+    REPORTER
+    xml
+    OUTPUT_DIR
+    .
+    OUTPUT_PREFIX
+    "standard_rules."
+    OUTPUT_SUFFIX
+    .xml
+)
+
 add_executable(has_function_tests "conditions/has_function_tests.cpp")
 target_link_libraries(has_function_tests PRIVATE project_options project_warnings catch_main)
 catch_discover_tests(
