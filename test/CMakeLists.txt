@@ -40,6 +40,22 @@ catch_discover_tests(
     .xml
 )
 
+add_executable(parity_tests "bitwise/parity_tests.cpp")
+target_link_libraries(parity_tests PRIVATE project_options project_warnings catch_main)
+catch_discover_tests(
+    parity_tests
+    TEST_PREFIX
+    "parity."
+    REPORTER
+    xml
+    OUTPUT_DIR
+    .
+    OUTPUT_PREFIX
+    "parity."
+    OUTPUT_SUFFIX
+    .xml
+)
+
 add_executable(has_function_tests "conditions/has_function_tests.cpp")
 target_link_libraries(has_function_tests PRIVATE project_options project_warnings catch_main)
 catch_discover_tests(
