@@ -1,27 +1,11 @@
 # cpp_starter_project
 
-[![Build status](https://ci.appveyor.com/api/projects/status/d1tbhi2frii45rcl/branch/main?svg=true)](https://ci.appveyor.com/project/cpp-best-practices/cpp-starter-project/branch/main)
-![CMake](https://github.com/cpp-best-practices/cpp_starter_project/workflows/CMake/badge.svg)
-[![codecov](https://codecov.io/gh/cpp-best-practices/cpp_starter_project/branch/main/graph/badge.svg)](https://codecov.io/gh/cpp-best-practices/cpp_starter_project)
-[![Language grade: C++](https://img.shields.io/lgtm/grade/cpp/github/cpp-best-practices/cpp_starter_project)](https://lgtm.com/projects/g/cpp-best-practices/cpp_starter_project/context:cpp)
+[![Build status](https://ci.appveyor.com/api/projects/status/d1tbhi2frii45rcl/branch/main?svg=true)](https://ci.appveyor.com/project/ScottFries/CodeLibrary/branch/main)
+![CMake](https://github.com/ScottFries/CodeLibrary/workflows/CMake/badge.svg)
+[![codecov](https://codecov.io/gh/cpp-best-practices/cpp_starter_project/branch/main/graph/badge.svg)](https://codecov.io/gh/ScottFries/CodeLibrary)
+[![Language grade: C++](https://img.shields.io/lgtm/grade/cpp/github/ScottFries/CodeLibrary)](https://lgtm.com/projects/g/ScottFries/CodeLibrary/context:cpp)
 
 ## Getting Started
-
-### Use the Github template
-First, click the green `Use this template` button near the top of this page.
-This will take you to Github's ['Generate Repository'](https://github.com/cpp-best-practices/cpp_starter_project/generate) page.
-Fill in a repository name and short description, and click 'Create repository from template'.
-This will allow you to create a new repository in your Github account,
-prepopulated with the contents of this project.
-Now you can clone the project locally and get to work!
-
-    git clone https://github.com/<user>/<your_new_repo>.git
-
-### Remove frameworks you're not going to use
-If you know you're not going to use one or more of the optional gui/graphics
-frameworks (fltk, gtkmm, imgui, etc.), you can remove them with `git rm`:
-
-    git rm -r src/<unnecessary_framework>
 
 ## Dependencies
 
@@ -218,30 +202,6 @@ The following compilers should work:
 	Follow instructions here:
 	https://github.com/include-what-you-use/include-what-you-use#how-to-install
 	</details>
-
-#### GUI libraries
-This project can be made to work with several optional GUI frameworks.
-
-If desired, you should install the following optional dependencies as
-directed by their documentation, linked here:
-
-- [FLTK](https://www.fltk.org/doc-1.4/index.html)
-- [GTKMM](https://www.gtkmm.org/en/documentation.html)
-- [QT](https://doc.qt.io/)
-
-The following dependencies can be downloaded automatically by CMake and Conan.
-All you need to do to install them is to turn on a CMake flag during
-configuration.
-If you run into difficulty using them, please refer to their documentation,
-linked here:
-
-- [NANA](http://nanapro.org/en-us/documentation/)
-- [SDL](http://wiki.libsdl.org/FrontPage)
-- [IMGUI](https://github.com/ocornut/imgui/tree/master/docs):
-  This framework depends on SFML, and if you are using Linux, you may need
-  to install several of SFML's dependencies using your package manager. See
-  [the SFML build tutorial](https://www.sfml-dev.org/tutorials/2.5/compile-with-cmake.php)
-  for specifics.
 
 ## Build Instructions
 
